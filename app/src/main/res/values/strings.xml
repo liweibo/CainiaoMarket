@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LYMarket</string>
+
+
+    <string name="title_activity_ware_detail">WareDetailActivity</string>
+    <string name="share">分享</string>
+
+    <string-array name="main_titles">
+        <item>主页</item>
+        <item>热卖</item>
+        <item>分类</item>
+        <item>购物车</item>
+        <item>我的</item>
+    </string-array>
+</resources>

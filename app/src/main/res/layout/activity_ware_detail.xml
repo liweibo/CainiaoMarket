@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+    <com.huake.lymarket.views.MyToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetEnd="56dp"
+        app:isShowSearchView="false"
+        app:navigationIcon="@drawable/icon_back_32px"
+        android:id="@+id/toolbar_detail_activity"
+        app:title="商品详情">
+    </com.huake.lymarket.views.MyToolbar>
+
+    <WebView
+        android:id="@+id/wb_detail_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+</LinearLayout>

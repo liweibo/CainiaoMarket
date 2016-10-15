@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.huake.lymarket.activity.MainActivity"
+    >
+    <com.huake.lymarket.views.MyViewPager
+        android:layout_above="@+id/rg_bottom_tag"
+        android:id="@+id/activity_main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.huake.lymarket.views.MyViewPager>
+    <RadioGroup
+        android:layout_alignParentBottom="true"
+        android:id="@+id/rg_bottom_tag"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#11000000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        >
+        <RadioButton
+            style="@style/botttom_tag_style"
+            android:id="@+id/rb_home"
+            android:text="主页"
+            android:drawableTop="@drawable/selector_icon_home"
+            />
+        <RadioButton
+            style="@style/botttom_tag_style"
+            android:drawableTop="@drawable/selector_icon_hot"
+            android:id="@+id/rb_hot"
+            android:text="热卖"
+            />
+
+
+        <RadioButton
+            style="@style/botttom_tag_style"
+            android:drawableTop="@drawable/selector_icon_category"
+            android:id="@+id/rb_category"
+            android:text="分类"
+            />
+
+
+        <RadioButton
+            style="@style/botttom_tag_style"
+            android:drawableTop="@drawable/selector_icon_cart"
+            android:id="@+id/rb_car"
+            android:text="购物车"
+            />
+        <RadioButton
+            android:id="@+id/rb_mine"
+            style="@style/botttom_tag_style"
+            android:drawableTop="@drawable/selector_icon_mine"
+            android:text="我的"
+            />
+    </RadioGroup>
+</RelativeLayout>

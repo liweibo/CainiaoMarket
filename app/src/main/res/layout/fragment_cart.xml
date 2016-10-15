@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.huake.lymarket.views.MyToolbar
+        android:id="@+id/toolbar_car_fragment"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:rightButtonText="编辑"
+        app:isShowSearchView="false"
+        android:layout_alignParentTop="true"
+        app:navigationIcon="@drawable/icon_back_32px"
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_car_fragment"
+        android:layout_marginBottom="50dp">
+
+    </android.support.v7.widget.RecyclerView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="#802f4f4f"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+
+        <CheckBox
+            android:id="@+id/checkbox_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:checked="true"
+            android:text="全选"
+            android:textSize="20sp"
+            style="@style/customCheckbox"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/txt_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/checkbox_all"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            android:text="合计"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/btn_order"
+            android:layout_width="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:minHeight="60dp"
+            android:minWidth="120dp"
+            android:text="去结算"
+            style="@style/bigRedButton"
+            android:layout_height="50dp"/>
+
+
+        <Button
+            android:id="@+id/btn_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:minHeight="60dp"
+            android:minWidth="120dp"
+            android:text="删除"
+            style="@style/bigRedButton"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

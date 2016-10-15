@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <com.huake.lymarket.views.MyToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:isShowSearchView="false"
+        app:navigationIcon="@drawable/icon_back_32px"
+        app:contentInsetEnd="56dp"
+        android:id="@+id/toolbar_detaiList_activity"
+        app:title="商品列表">
+
+    </com.huake.lymarket.views.MyToolbar>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout_detaiList_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/customTabLayout"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        >
+    </android.support.design.widget.TabLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/txt_detaiList_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#eb4f38"/>
+    </LinearLayout>
+
+    <com.cjj.MaterialRefreshLayout
+        android:id="@+id/refresh_layout_detaiList_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:overlay="false"
+        app:wave_show="false"
+        app:wave_color="#90ffffff"
+        app:progress_colors="@array/material_colors"
+        app:wave_height_type="higher"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycerview_detaiList_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </com.cjj.MaterialRefreshLayout>
+</LinearLayout>
