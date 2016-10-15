@@ -4,7 +4,7 @@
  
 **【运行效果】**<br/>
 
-<img src="https://github.com/helloworld107/CainiaoMarket/screenshot/13.order.png" width="460" height="768"/>
+<img src="https://github.com/helloworld107/CainiaoMarket/blob/master/screenshot/13.order.png" width="460" height="768"/>
 <img src="https://github.com/helloworld107/CainiaoMarket/screenshot/14.pay_success.png" width="460" height="768"/>
 <img src="https://github.com/helloworld107/CainiaoMarket/screenshot/18.myorder.png" width="460" height="768"/>
 <img src="https://github.com/helloworld107/CainiaoMarket/screenshot/1.home.png" width="460" height="768"/>
